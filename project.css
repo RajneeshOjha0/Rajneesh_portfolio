@@ -1,0 +1,48 @@
+section{
+    max-width: 80vw;
+
+}
+.title{
+    color: aliceblue;
+    margin: 35px 569px;
+
+}
+.box {
+    background-color: white;
+    width: 90vw;
+    height: 2px;
+    margin: 54px 54px;
+    display: flex;
+    position: relative;
+}
+
+
+.vertical {
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0px 137px;
+}
+
+.image-top {
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+
+}
+
+.vertical-title {
+    position: relative;
+    top: 75px;
+    width: 235px;
+    font-size: 20px;
+}
+
+.vertical-desc {
+    position: relative;
+    top: 86px;
+    color: gray;
+    width: 180px;
+    font-size: 12px;
+}

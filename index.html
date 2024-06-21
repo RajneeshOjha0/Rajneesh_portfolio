@@ -11,124 +11,26 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: rgb(0, 0, 33);
-            color: white;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color: rgb(18, 18, 62);
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-
-        }
-
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
-
-        nav ul li a:hover {
-
-            color: rgb(201, 201, 233);
-            font-size: 1.2rem;
-
-        }
-
-        .left {
-            font-size: 1.5rem;
-        }
-
-        .firstSection {
-            display: flex;
-            justify-content: space-around;
-            margin: 90px 0;
-            align-items: center;
-        }
-
-        .firstSection>div {
-            width: 30%;
-        }
-
-        .leftSection {
-
-            font-size: 3rem;
-
-
-        }
-
-        .rightSection img {
-
-            width: 80%;
-            margin: 50px 0;
-
-        }
-
-        .purple {
-            color: rgb(170, 107, 228);
-        }
-        .text-gray{
-            color: gray;
-        }
-
-        #element {
-            color: rgb(170, 107, 228);
-        }
-         main hr{
-            border: 0;
-            background: #9c97f1;
-            height: 1.2px;
-            margin: 60px 84px;
-
-        }
-        .secondSection{
-            max-width: 80vw;
-            margin: auto;
-        }
-        .secondSection h1{
-            font-size: 1.9rem;
-        }
-       
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="left">Rajneesh Portfolio</div>
+            <div class="left"> Rajneesh  ojha Portfolio</div>
             <div class="right">
                 <ul>
                     <a href="/">
                         <li>Home
                     </a></li>
-                    <a href="/">
+                    <a href="#about">
                         <li>About
                     </a></li>
-                    <a href="/">
-                        <li>Services
+                    
+                    <a href="project.html">
+                        <li>Projects
                     </a></li>
-                    <a href="/">
-                        <li>projects
-                    </a></li>
-                    <a href="/">
+                    <a href="Contact Us.html">
                         <li>Contact Me
                     </a></li>
                 </ul>
@@ -142,24 +44,128 @@
                 Hi , My name is <span class="purple">Rajneesh</span>
                 <div>and I am a web Developer</div>
                 <span id="element"></span>
+                <div class="buttons">
+                    <a href="Rajneesh ojha-1.pdf" download="Rajneesh Ojha Resume"><button class="btn">Download resume</button></a>
+                    <a href="https://github.com/RajneeshOjha0" target=”_blank”><button class="btn"> github</button></a>
+                    <a href="https://www.linkedin.com/in/rajneesh-ojha-b47556186/" target=”_blank”><button class="btn">LinkedIn</button></a>
+                </div>
             </div>
             <div class="rightSection">
                 <img src="developer img.jpg" alt="">
             </div>
         </section>
-    <hr>
+        <hr>
 
-        <section class="secondSection">
+        <section class="secondSection" id="about">
             <span class="text-gray">What I have done so far</span>
             <h1>Work experience</h1>
-            
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="dev.png" alt="loading">
+                    <div class="vertical-title">
+                        Graduate Engineer Trainee Marquis Technologies Pvt Ltd , Noida 
+                        <span>(Dec-2023 - Mar 2024)</span>
+                    </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li> Conducting software testing on Topaz-R and Neptune.</li>
+                            <li> Executing tasks on Topaz-R , Neptune,Qualcomm Chipset including Flashing, Sanity, and Capturing Log.</li>
+                            <li>Key skills LTE, VoLTE, VoWifi, 5G-SA, NSA, VoNR, NR CA, ThroughPut, Ping, HandOver, CSFB, SRVCC.</li>
+                            <li>Analyzing Call Drop, Call flow, swap, and handover Failure.</li>
+                            <li>Utilizing tools such as G-net Tracker, Netmonster, and Speed Test by Ookla , ALM , QXDM,QPM ,QCAT.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.png" alt="loading">
+                    <div class="vertical-title">
+                        UI/UX Intern Suven Consultants Technology Pvt. Ltd. , Jhansi
+                        <span>(March 2022- April 2022)</span>
+                    </div>
+                    <div class="vertical-desc">
+                       <ul>
+                        <li>Spearheaded the creation of dynamic web projects utilizing HTML, CSS, and JavaScript</li>
+                        <li>resulting in a 40 percent decrease in page load time and improved user experience.</li>
+                        <li>Collaborated with development teams to bridge the gap between design,implementation and Conducted regular
+                        feedback sessions, ensuring the alignment of design goals with technical feasibility</li>
+                    </ul>
+                    </div>
+                </div>
+                
         </section>
+        <hr>
+
+        <section>
+            <h2 class="skill-title">Me and my Tech Stack</h2>
+            <div class="skill-container">
+                
+                <div class="left-skill-container">
+                    <p>I am a proficient frontend developer with extensive experience in creating scalable and high-performance applications
+                    using React.js. I have designed and maintained responsive, aesthetic user interfaces, significantly enhancing user
+                    engagement. My expertise in utilizing Tailwind CSS ensures visually appealing and consistent designs. I am adept at
+                    using development tools such as VS Code, React DevTool, Git, and GitHub.
+                    
+                    In my role as a UI/UX intern at Suven Consultants Technology Pvt. Ltd., I spearheaded dynamic web projects using HTML,
+                    CSS, and JavaScript. My efforts resulted in a 40% reduction in page load time and improved user experience. I
+                    effectively collaborated with development teams, ensuring the alignment of design goals with technical feasibility.
+                    
+                    I have worked on several notable projects, including StudyNotion, an ed-tech platform built with the MERN stack, and a
+                    Razorpay Clone website, where I played a pivotal role in frontend development. My technical skills encompass Java,
+                    JavaScript, HTML, CSS, React.js, Express.js, MongoDB, MySQL, PHP, and Laravel. Additionally, I possess strong soft
+                    skills such as time management, teamwork, communication, problem-solving, leadership, and accountability.
+                    
+                    Overall, my combination of technical expertise and soft skills makes me a valuable asset in the field of fullStack
+                    development</p>
+                </div>
+                <div class="right-skill-container"></div>
+                <div class="skill-logo-container">
+                    <img src="stack/html.png" alt="" class="skill-logo">
+                    <img src="stack/css.png" alt="" class="skill-logo">
+                    <img src="stack/javascript.png" alt="" class="skill-logo">
+                    <img src="stack/redux.png" alt="" class="skill-logo">
+                    <img src="stack/express.png" alt="" class="skill-logo">
+                    <img src="stack/docker.png" alt="" class="skill-logo">
+                    <img src="stack/download.png" alt="" class="skill-logo">
+                    <img src="stack/github.png" alt="" class="skill-logo">
+                    <img src="stack/git.png" alt="" class="skill-logo">
+                    <img src="stack/tailwind.png" alt="" class="skill-logo">
+                    <img src="stack/nodejs.jpeg" alt="" class="skill-logo">
+                    <img src="stack/mongodb.png" alt="" class="skill-logo">
+                    
+                </div>
+            </div>
+
+        </section>
+        <hr>
     </main>
+
+    <footer>
+    <nav style="background-color: #0e0e1a;">
+        <div class="left"> Rajneesh ojha FullStack Developer</div>
+        <div class="right">
+            <ul>
+                <a href="/">
+                    <li>Home
+                </a></li>
+                <a href="#about">
+                    <li>About
+                </a></li>
+    
+                <a href="project.html">
+                    <li>Projects
+                </a></li>
+                <a href="Contact Us.html">
+                    <li>Contact Me
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+    </footer>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['Web Developer', 'MernStack developer',],
+            strings: ['Web Developer', 'MernStack developer','Coder' ],
             typeSpeed: 50,
         });
     </script>
