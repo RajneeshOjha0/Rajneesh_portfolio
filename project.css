@@ -1,3 +1,21 @@
+/* Inherit variables from index.css */
+
+.projects-header {
+    text-align: center;
+    padding-top: 6rem;
+    margin-bottom: 3rem;
+}
+
+.projects-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.projects-header p {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+}
+
 /* Project Timeline - Alternating Layout */
 
 /* Container */
@@ -149,12 +167,10 @@
     gap: 8px;
     margin-top: 15px;
     justify-content: flex-end;
-    /* Align right for left items */
 }
 
 .timeline-item:nth-child(even) .project-tech {
     justify-content: flex-start;
-    /* Align left for right items */
 }
 
 .project-tech span {
@@ -203,6 +219,13 @@
 
 /* Responsive Design for Mobile */
 @media screen and (max-width: 768px) {
+    .projects-header {
+        padding-top: 4rem;
+    }
+
+    .projects-header h1 {
+        font-size: 2rem;
+    }
 
     /* Place the line to the left */
     .timeline::after {
@@ -215,7 +238,6 @@
         padding-left: 70px;
         padding-right: 25px;
         text-align: left;
-        /* Reset text align */
     }
 
     /* Reset left/right positioning */
@@ -229,7 +251,6 @@
     .timeline-item::after,
     .timeline-item:nth-child(even)::after {
         left: 21px;
-        /* Center on the line at 31px (31 - 10 = 21) */
     }
 
     /* Adjust arrows */

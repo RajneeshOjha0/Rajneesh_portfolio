@@ -4,11 +4,8 @@
     --text-color: #e2e8f0;
     --text-muted: #94a3b8;
     --primary-color: #6c63ff;
-    /* Vibrant Purple */
     --secondary-color: #00d4ff;
-    /* Cyan/Teal */
     --accent-color: #ff007a;
-    /* Pink for highlights */
     --nav-bg: rgba(11, 12, 21, 0.95);
     --font-main: 'Poppins', sans-serif;
     --max-width: 1200px;
@@ -102,6 +99,67 @@ nav {
     transition: width 0.3s;
 }
 
+.right ul li:hover::after {
+    width: 100%;
+}
+
+/* Purple gradient text */
+.purple {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.btn {
+    padding: 12px 30px;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(108, 99, 255, 0.3);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(108, 99, 255, 0.5);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--secondary-color);
+    box-shadow: none;
+}
+
+.btn-outline:hover {
+    background: rgba(0, 212, 255, 0.1);
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+}
+
+/* Sections */
+section {
+    padding: 80px 10%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
 /* First Section (Hero) */
 .firstSection {
     display: flex;
@@ -118,13 +176,6 @@ nav {
 .leftSection h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-}
-
-.leftSection .purple {
-    color: var(--primary-color);
-    background: -webkit-linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .leftSection .role {
@@ -309,7 +360,6 @@ footer {
 
     .right {
         display: none;
-        /* For now, hide menu on mobile or implement hamburger */
     }
 
     .firstSection {
