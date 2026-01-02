@@ -28,10 +28,30 @@
                 </ul>
             </div>
         </nav>
-        </div>
-        <div class="rightSection">
-            <img src="developer img.jpg" alt="Rajneesh Ojha">
-        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="firstSection">
+            <div class="leftSection">
+                <p>Hi, I am</p>
+                <h1>Rajneesh <span class="purple">Ojha</span></h1>
+                <div class="role">and I am a <span id="element"></span></div>
+                <p>
+                    Building reliable, high-performance systems with 2 years of experience.
+                    Specializing in backend architecture, AI feature integration, and cloud deployment.
+                </p>
+                <div class="buttons">
+                    <a href="rajneesh.pdf" download="Rajneesh_Ojha_Resume" class="btn">Download Resume</a>
+                    <a href="https://github.com/RajneeshOjha0" target="_blank" class="btn btn-outline"><i
+                            class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/rajneesh-ojha-b47556186/" target="_blank"
+                        class="btn btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="developer img.jpg" alt="Rajneesh Ojha">
+            </div>
         </section>
 
         <hr>
@@ -165,25 +185,33 @@
             </div>
         </section>
 
-        </main>
+    </main>
 
-        <footer>
-            <div class="footer-content">
-                <h3>Rajneesh Ojha</h3>
-                <p>Backend Developer | AI Enthusiast</p>
-                <div class="social-links">
-                    <a href="https://github.com/RajneeshOjha0" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/rajneesh-ojha-b47556186/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="mailto:rajneeshojha0@gmail.com"><i class="fas fa-envelope"></i></a>
-                </div>
-                <p style="margin-top: 2rem; font-size: 0.8rem; color: #666;">&copy; 2025 Rajneesh Ojha. All rights
-                    reserved.</p>
+    <footer>
+        <div class="footer-content">
+            <h3>Rajneesh Ojha</h3>
+            <p>Backend Developer | AI Enthusiast</p>
+            <div class="social-links">
+                <a href="https://github.com/RajneeshOjha0" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/rajneesh-ojha-b47556186/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="mailto:rajneeshojha0@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
-        </footer>
+            <p style="margin-top: 2rem; font-size: 0.8rem; color: #666;">&copy; 2025 Rajneesh Ojha. All rights
+                reserved.</p>
+        </div>
+    </footer>
 
-        <!-- Typed.js (Optional, keeping if user wants dynamic text, but removed from main flow for cleaner look) -->
-        <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Backend Developer', 'MERN Stack Developer', 'AI Enthusiast'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+    </script>
 </body>
 
 </html>
