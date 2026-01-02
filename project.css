@@ -1,48 +1,254 @@
-section{
-    max-width: 80vw;
+/* Project Timeline - Alternating Layout */
 
+/* Container */
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto 4rem;
+    padding: 2rem 0;
 }
-.title{
-    color: aliceblue;
-    margin: 35px 569px;
 
+/* Central Line */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+    border-radius: 2px;
+    box-shadow: 0 0 15px rgba(108, 99, 255, 0.5);
 }
-.box {
-    background-color: white;
-    width: 90vw;
-    height: 2px;
-    margin: 54px 54px;
+
+/* Timeline Item Container */
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+}
+
+/* Left Side Items */
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+/* Right Side Items */
+.timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+
+/* The Dot on the Line */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    background-color: var(--bg-color);
+    border: 4px solid var(--secondary-color);
+    top: 25px;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 0.3s;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+/* Fix Dot for Right Side */
+.timeline-item:nth-child(even)::after {
+    left: -10px;
+}
+
+/* Hover Effect on Dot */
+.timeline-item:hover::after {
+    background-color: var(--primary-color);
+    border-color: white;
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(108, 99, 255, 0.8);
+}
+
+/* Content Card */
+.timeline-content {
+    padding: 20px 30px;
+    background: var(--card-bg);
+    position: relative;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-item:hover .timeline-content {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(108, 99, 255, 0.2);
+}
+
+/* Arrow pointing to line */
+.timeline-item:nth-child(odd) .timeline-content::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: -10px;
+    border: medium solid var(--card-bg);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent var(--card-bg);
+    transition: border-color 0.4s;
+}
+
+.timeline-item:nth-child(even) .timeline-content::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: -10px;
+    border: medium solid var(--card-bg);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--card-bg) transparent transparent;
+    transition: border-color 0.4s;
+}
+
+/* Typography in Card */
+.timeline-role {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.timeline-company {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.timeline-desc p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Tech Stack Badges */
+.project-tech {
     display: flex;
-    position: relative;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+    justify-content: flex-end;
+    /* Align right for left items */
 }
 
-
-.vertical {
-    height: 93px;
-    width: 1px;
-    background-color: white;
-    margin: 0px 137px;
+.timeline-item:nth-child(even) .project-tech {
+    justify-content: flex-start;
+    /* Align left for right items */
 }
 
-.image-top {
-    width: 23px;
-    position: relative;
-    top: -32px;
-    left: -9px;
-
+.project-tech span {
+    background: rgba(108, 99, 255, 0.1);
+    color: var(--text-color);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    border: 1px solid rgba(108, 99, 255, 0.2);
+    transition: all 0.3s;
 }
 
-.vertical-title {
-    position: relative;
-    top: 75px;
-    width: 235px;
-    font-size: 20px;
+.project-tech span:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
 }
 
-.vertical-desc {
-    position: relative;
-    top: 86px;
-    color: gray;
-    width: 180px;
-    font-size: 12px;
+/* Links */
+.timeline-date {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.timeline-item:nth-child(even) .timeline-date {
+    justify-content: flex-start;
+}
+
+.timeline-date a {
+    color: white;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    padding: 6px 16px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s;
+}
+
+.timeline-date a:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+
+    /* Place the line to the left */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Make all items full width and align left */
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+        text-align: left;
+        /* Reset text align */
+    }
+
+    /* Reset left/right positioning */
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        left: 0;
+        text-align: left;
+    }
+
+    /* Move dots to the left line */
+    .timeline-item::after,
+    .timeline-item:nth-child(even)::after {
+        left: 21px;
+        /* Center on the line at 31px (31 - 10 = 21) */
+    }
+
+    /* Adjust arrows */
+    .timeline-item:nth-child(odd) .timeline-content::before,
+    .timeline-item:nth-child(even) .timeline-content::before {
+        left: -10px;
+        right: auto;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent var(--card-bg) transparent transparent;
+    }
+
+    /* Align tech stack and links to left */
+    .project-tech,
+    .timeline-item:nth-child(even) .project-tech {
+        justify-content: flex-start;
+    }
+
+    .timeline-date,
+    .timeline-item:nth-child(even) .timeline-date {
+        justify-content: flex-start;
+    }
 }

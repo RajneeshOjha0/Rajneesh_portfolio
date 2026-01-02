@@ -4,172 +4,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rajneesh - Portfolio</title>
+    <title>Rajneesh Ojha - Backend Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="index.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="left"> Rajneesh  ojha Portfolio</div>
+            <div class="left">Rajneesh.dev</div>
             <div class="right">
                 <ul>
-                    <a href="/">
-                        <li>Home
-                    </a></li>
-                    <a href="#about">
-                        <li>About
-                    </a></li>
-                    
-                    <a href="project.html">
-                        <li>Projects
-                    </a></li>
-                    <a href="Contact Us.html">
-                        <li>Contact Me
-                    </a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="Contact Us.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
-    </header>
-
-    <main>
-        <section class="firstSection">
-            <div class="leftSection">
-                Hi , My name is <span class="purple">Rajneesh</span>
-                <div>and I am a web Developer</div>
-                <span id="element"></span>
-                <div class="buttons">
-                    <a href="Rajneesh ojha-1.pdf" download="Rajneesh Ojha Resume"><button class="btn">Download resume</button></a>
-                    <a href="https://github.com/RajneeshOjha0" target=”_blank”><button class="btn"> github</button></a>
-                    <a href="https://www.linkedin.com/in/rajneesh-ojha-b47556186/" target=”_blank”><button class="btn">LinkedIn</button></a>
-                </div>
-            </div>
-            <div class="rightSection">
-                <img src="developer img.jpg" alt="">
-            </div>
+        </div>
+        <div class="rightSection">
+            <img src="developer img.jpg" alt="Rajneesh Ojha">
+        </div>
         </section>
+
         <hr>
 
-        <section class="secondSection" id="about">
-            <span class="text-gray">What I have done so far</span>
-            <h1>Work experience</h1>
-            <div class="box">
-                <div class="vertical">
-                    <img class="image-top" src="dev.png" alt="loading">
-                    <div class="vertical-title">
-                        Graduate Engineer Trainee Marquis Technologies Pvt Ltd , Noida 
-                        <span>(Dec-2023 - Mar 2024)</span>
+        <!-- About / Summary Section -->
+        <section id="about">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Professional Summary</h2>
+            <p style="max-width: 800px; margin: 0 auto; text-align: center; color: var(--text-muted);">
+                Backend Developer with 2 years of experience in building reliable, high-performance systems. Skilled in
+                backend
+                architecture, AI feature integration, and cloud deployment. Recognized for strong technical
+                contributions, including
+                performance optimization, GPT/Claude integrations, and delivering scalable solutions for high-traffic
+                applications with
+                excellent uptime.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Experience Section -->
+        <section id="experience" class="secondSection">
+            <h1>Work Experience</h1>
+            <div class="timeline">
+
+                <!-- Vega6 -->
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <div class="timeline-role">Backend Developer</div>
+                            <div class="timeline-company">Vega6 Webware Technologies, Noida</div>
+                        </div>
+                        <div class="timeline-date">July 2024 – Present</div>
                     </div>
-                    <div class="vertical-desc">
+                    <div class="timeline-desc">
                         <ul>
-                            <li> Conducting software testing on Topaz-R and Neptune.</li>
-                            <li> Executing tasks on Topaz-R , Neptune,Qualcomm Chipset including Flashing, Sanity, and Capturing Log.</li>
-                            <li>Key skills LTE, VoLTE, VoWifi, 5G-SA, NSA, VoNR, NR CA, ThroughPut, Ping, HandOver, CSFB, SRVCC.</li>
-                            <li>Analyzing Call Drop, Call flow, swap, and handover Failure.</li>
-                            <li>Utilizing tools such as G-net Tracker, Netmonster, and Speed Test by Ookla , ALM , QXDM,QPM ,QCAT.</li>
+                            <li><strong>High-Performance Development:</strong> Built backend services in Node.js and
+                                CodeIgniter 3/4, reducing API latency by 30% through MySQL query optimization, caching,
+                                and connection pooling.</li>
+                            <li><strong>AI Feature Integration:</strong> Integrated GPT and Claude models to power
+                                dynamic content generation, enhancing text and media processing capabilities.</li>
+                            <li><strong>Cloud and API Deployment:</strong> Developed and deployed solutions on AWS EC2
+                                and S3, as well as dedicated servers, maintaining 99.95% uptime during traffic spikes.
+                            </li>
+                            <li><strong>Third-Party Integrations:</strong> Integrated Stripe, PayPal, YouTube, and
+                                Facebook APIs into production systems.</li>
                         </ul>
                     </div>
                 </div>
-                <div class="vertical">
-                    <img class="image-top" src="dev.png" alt="loading">
-                    <div class="vertical-title">
-                        UI/UX Intern Suven Consultants Technology Pvt. Ltd. , Jhansi
-                        <span>(March 2022- April 2022)</span>
+
+                <!-- Marquis -->
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <div class="timeline-role">Graduate Engineer Trainee / Intern</div>
+                            <div class="timeline-company">Marquis Technologies Pvt Ltd, Noida</div>
+                        </div>
+                        <div class="timeline-date">Dec 2023 – June 2024</div>
                     </div>
-                    <div class="vertical-desc">
-                       <ul>
-                        <li>Spearheaded the creation of dynamic web projects utilizing HTML, CSS, and JavaScript</li>
-                        <li>resulting in a 40 percent decrease in page load time and improved user experience.</li>
-                        <li>Collaborated with development teams to bridge the gap between design,implementation and Conducted regular
-                        feedback sessions, ensuring the alignment of design goals with technical feasibility</li>
-                    </ul>
+                    <div class="timeline-desc">
+                        <ul>
+                            <li><strong>Backend Development:</strong> Designed and implemented Node.js services with a
+                                focus on scalability and performance.</li>
+                            <li><strong>API and Service Integration:</strong> Connected third-party APIs to expand
+                                application features.</li>
+                            <li><strong>Database Management:</strong> Managed MongoDB databases for efficient data
+                                storage, retrieval, and schema design.</li>
+                            <li><strong>Security and APIs:</strong> Implemented secure JWT and OAuth authentication and
+                                developed RESTful API endpoints for frontend integration.</li>
+                        </ul>
                     </div>
                 </div>
-                
+
+            </div>
         </section>
+
         <hr>
 
-        <section>
-            <h2 class="skill-title">Me and my Tech Stack</h2>
-            <div class="skill-container">
-                
-                <div class="left-skill-container">
-                    <p>I am a proficient frontend developer with extensive experience in creating scalable and high-performance applications
-                    using React.js. I have designed and maintained responsive, aesthetic user interfaces, significantly enhancing user
-                    engagement. My expertise in utilizing Tailwind CSS ensures visually appealing and consistent designs. I am adept at
-                    using development tools such as VS Code, React DevTool, Git, and GitHub.
-                    
-                    In my role as a UI/UX intern at Suven Consultants Technology Pvt. Ltd., I spearheaded dynamic web projects using HTML,
-                    CSS, and JavaScript. My efforts resulted in a 40% reduction in page load time and improved user experience. I
-                    effectively collaborated with development teams, ensuring the alignment of design goals with technical feasibility.
-                    
-                    I have worked on several notable projects, including StudyNotion, an ed-tech platform built with the MERN stack, and a
-                    Razorpay Clone website, where I played a pivotal role in frontend development. My technical skills encompass Java,
-                    JavaScript, HTML, CSS, React.js, Express.js, MongoDB, MySQL, PHP, and Laravel. Additionally, I possess strong soft
-                    skills such as time management, teamwork, communication, problem-solving, leadership, and accountability.
-                    
-                    Overall, my combination of technical expertise and soft skills makes me a valuable asset in the field of fullStack
-                    development</p>
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <!-- Languages -->
+                <div class="skill-card">
+                    <img src="stack/javascript.png" alt="JS">
+                    <span>JavaScript (ES6+)</span>
                 </div>
-                <div class="right-skill-container"></div>
-                <div class="skill-logo-container">
-                    <img src="stack/html.png" alt="" class="skill-logo">
-                    <img src="stack/css.png" alt="" class="skill-logo">
-                    <img src="stack/javascript.png" alt="" class="skill-logo">
-                    <img src="stack/redux.png" alt="" class="skill-logo">
-                    <img src="stack/express.png" alt="" class="skill-logo">
-                    <img src="stack/docker.png" alt="" class="skill-logo">
-                    <img src="stack/download.png" alt="" class="skill-logo">
-                    <img src="stack/github.png" alt="" class="skill-logo">
-                    <img src="stack/git.png" alt="" class="skill-logo">
-                    <img src="stack/tailwind.png" alt="" class="skill-logo">
-                    <img src="stack/nodejs.jpeg" alt="" class="skill-logo">
-                    <img src="stack/mongodb.png" alt="" class="skill-logo">
-                    
+                <div class="skill-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP">
+                    <span>PHP 8</span>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="skill-card">
+                    <img src="stack/nodejs.jpeg" alt="Node.js">
+                    <span>Node.js</span>
+                </div>
+                <div class="skill-card">
+                    <img src="stack/express.png" alt="Express">
+                    <span>Express.js</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://codeigniter.com/assets/images/ci-logo-big.png" alt="CodeIgniter">
+                    <span>CodeIgniter</span>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-card">
+                    <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL">
+                    <span>MySQL</span>
+                </div>
+                <div class="skill-card">
+                    <img src="stack/mongodb.png" alt="MongoDB">
+                    <span>MongoDB</span>
+                </div>
+
+                <!-- Cloud/Tools -->
+                <div class="skill-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
+                        alt="AWS">
+                    <span>AWS</span>
+                </div>
+                <div class="skill-card">
+                    <img src="stack/docker.png" alt="Docker">
+                    <span>Docker</span>
+                </div>
+                <div class="skill-card">
+                    <img src="stack/git.png" alt="Git">
+                    <span>Git</span>
                 </div>
             </div>
-
         </section>
-        <hr>
-    </main>
 
-    <footer>
-    <nav style="background-color: #0e0e1a;">
-        <div class="left"> Rajneesh ojha FullStack Developer</div>
-        <div class="right">
-            <ul>
-                <a href="/">
-                    <li>Home
-                </a></li>
-                <a href="#about">
-                    <li>About
-                </a></li>
-    
-                <a href="project.html">
-                    <li>Projects
-                </a></li>
-                <a href="Contact Us.html">
-                    <li>Contact Me
-                </a></li>
-            </ul>
-        </div>
-    </nav>
-    </footer>
+        </main>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Developer', 'MernStack developer','Coder' ],
-            typeSpeed: 50,
-        });
-    </script>
+        <footer>
+            <div class="footer-content">
+                <h3>Rajneesh Ojha</h3>
+                <p>Backend Developer | AI Enthusiast</p>
+                <div class="social-links">
+                    <a href="https://github.com/RajneeshOjha0" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rajneesh-ojha-b47556186/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="mailto:rajneeshojha0@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p style="margin-top: 2rem; font-size: 0.8rem; color: #666;">&copy; 2025 Rajneesh Ojha. All rights
+                    reserved.</p>
+            </div>
+        </footer>
 
+        <!-- Typed.js (Optional, keeping if user wants dynamic text, but removed from main flow for cleaner look) -->
+        <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
 </body>
 
 </html>
